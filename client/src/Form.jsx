@@ -10,7 +10,7 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            let res = await axios.post('http://localhost:3000/create', {name, description: desc, price, quantity})
+            let res = await axios.post('https://inventory-m2qs.onrender.com/create', {name, description: desc, price, quantity})
             console.log(res.data.message)
             navigate('/forms')
         } catch (error) {

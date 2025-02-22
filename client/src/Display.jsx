@@ -6,7 +6,7 @@
 
         const fetchForms = async () => {
             try {
-                let res = await axios.get(`http://localhost:3000/forms`)
+                let res = await axios.get(`https://inventory-m2qs.onrender.com/forms`)
                 setForms(res.data.forms)
                 // console.log()
             } catch (error) {
