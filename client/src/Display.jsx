@@ -20,10 +20,10 @@
         <div className='grid'>
             {forms && forms.map(form => (
                 <div className='card' key={form._id}>
-                    <p>{form.name}</p>
-                    <p>{form.description}</p>
-                    <p>{form.price}</p>
-                    <p>{form.quantity}</p>
+                    <p>Name: {form.name}</p>
+                    <p>Description: {form.description}</p>
+                    <p>Price: {form.price}</p>
+                    <p>Quantity: {form.quantity}</p>
                 </div>
             ))}
         </div>
